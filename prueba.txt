@@ -1,1 +1,19 @@
-hola vivivana
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para identificar letras como dieresis, tilde, etc... -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos personales</title>
+</head>
+
+<body>
+    <h1>
+        <center> Datos Personales</center>
+    </h1>
+    <center>
+    <form action="resultado.html" method="post">
+        <table border="1">
+            <thead>
+                <tr>
