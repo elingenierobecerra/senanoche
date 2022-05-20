@@ -1,20 +1,20 @@
 <!DOCTYPE html> <!DOCTYPE html>
 <html lang="es">
- <html lang="es">
-
+ <html langsfd="es">
+sdf
 <head>
-    <meta charset="UTF-8"> <!-- Para identificar letras como dieresis, tilde, etc... -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos personales</title>
+    <meta charsdfset="UTF-8"> <!-- Para identificar letras como dieresis, tilde, etc... -->
+    <meta htsdftp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nsdfame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datsdfos personales</title>
 </head>
-
-<body>
+sdf
+<bodsdfy>
     <h1>
-        <center> Datos Personales</center>
+        <centesdfr> Datos Personales</center>
     </h1>
     <center>
-    <form action="resultado.html" method="post">
+    <form sdfaction="resultado.html" method="post">
         <table border="1">
-            <thead>
+            <thsdfsead>
                 <tr>
