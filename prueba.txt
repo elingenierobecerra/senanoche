@@ -18,4 +18,5 @@
         <table border="1">
             <thead>
                 <tr>
-notas
+
+    Wilmer fue el que comiteio
