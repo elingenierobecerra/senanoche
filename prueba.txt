@@ -14,7 +14,8 @@
         <center> Datos Personales</center>
     </h1>
     <center>
-    <form action="resultado.html" method="post">
+    <form action="practica.html" method="post">
         <table border="1">
             <thead>
                 <tr>
+notas
