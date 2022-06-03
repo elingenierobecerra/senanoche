@@ -22,7 +22,7 @@
 <script src="view/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="view/dist/js/demo.js"></script>
-<script src="view/js/validacion.js"></script>
+
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()

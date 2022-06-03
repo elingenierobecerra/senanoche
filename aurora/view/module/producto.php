@@ -14,45 +14,58 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="col-lg-6">
-                <div class="input-group margin">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-danger">Descripcion</button>
+              <form method="post" id = "formulario">
+                <div class="col-lg-6">
+                  <div class="input-group margin">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Descripcion</button>
+                      </div>
+                      <!-- /btn-group -->
+                      <input type="text" class="form-control" id="txtdescripcion" name="txtdescripcion">
                     </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="txtdescripcion">
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="input-group margin">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-danger">Cantidad</button>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group margin">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Cantidad</button>
+                      </div>
+                      <!-- /btn-group -->
+                      <input type="text" class="form-control" id="txtcantidad" name="txtcantidad">
                     </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="txtcantidad">
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="input-group margin">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-danger">Referencia</button>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group margin">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Referencia</button>
+                      </div>
+                      <!-- /btn-group -->
+                      <input type="text" class="form-control" id="txtreferencia" name="txtreferencia">
                     </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="txtreferencia">
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="input-group margin">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-danger">Disponible</button>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group margin">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Disponible</button>
+                      </div>
+                      <!-- /btn-group -->
+                      <input type="text" class="form-control" id="txtdisponible" name="txtdisponible">
                     </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="txtdisponible">
-                  </div>
-              </div>
-              <button class="btn btn-app" type="submit" onClick="validar();">
-                <i class="fa fa-save"></i> Guardar
-              </button>
+                </div>
+                <button class="btn btn-app" onclick="validar(event);">
+                  <i class="fa fa-save"></i> Guardar
+                </button>
+              </form>
+              <?php
+                if (isset($_POST["txtdescripcion"])){
+                  $objCtrProducto = new ControllerProducto();
+                  $objCtrProducto -> ctrInsertarProducto ( 
+                    $_POST["txtdescripcion"],
+                    $_POST["txtcantidad"],
+                    $_POST["txtreferencia"],
+                    $_POST["txtdisponible"]
+                  );
+                }
+              ?>
             </div>
 
         </div>
