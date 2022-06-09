@@ -18,6 +18,9 @@
 <script src="view/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="view/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- DataTables -->
+<script src="view/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="view/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="view/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
@@ -26,6 +29,29 @@
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()
+  })
+  $(function () {
+    $('#td-producto').DataTable({
+    language: {
+        "decimal": "",
+        "emptyTable": "No hay información",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Entradas",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+            "first": "Primero",
+            "last": "Ultimo",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        }
+    }})
   })
 </script>
 </body>

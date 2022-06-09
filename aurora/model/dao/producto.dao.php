@@ -32,8 +32,21 @@
                 echo "Hay un error en el dao de producto " . $ex -> getMessage();
             }
             return $this -> estado;
+        }//FIN DE INSERTAR PRODUCTO
+        public function mdlListarProducto(){
+            $sql = "CALL spListarProducto( );";
+            $resultset = false;
+            try {
+                $con = new Conexion();
+                $stmt = $con -> conexion() -> prepare($sql);
+                $stmt -> execute();
+                $resultset = $stmt;
+            } catch (PDOExcepcion $e) {
+                echo "Error al consutlar el listar";
+            }
+            return $resultset;
         }
-    }
+    }//FIN CLASE
 
 
 ?>

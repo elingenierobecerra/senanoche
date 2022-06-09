@@ -69,6 +69,56 @@
             </div>
 
         </div>
+        <div class="box">
+            <div class="box-header with-border">
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                            class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+             
+              <table id="td-producto" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Referencia</th>
+                    <th>Disponibilidad</th>
+                    <th>Acciones</th>
+                  </tr> 
+                </thead>
+                <tbody>
+
+              <?php
+              $objCtrProducto = new ControllerProducto();
+              $listaProducto = $objCtrProducto -> ctrListarProducto();
+              
+              foreach($listaProducto as $dato){
+                echo"
+                  <tr>
+                    <td>".$dato["CODIGO"]."</td>
+                    <td>".$dato["DESCRIPCION"]."</td>
+                    <td>".$dato["CANTIDAD"]."</td>
+                    <td>".$dato["REFERENCIA"]."</td>
+                    <td>".$dato["DISPONIBLE"]."</td>
+                    <td>
+                      <button>Eli</button>
+                      <button>Mod</button>
+                      <button>Rep</button>
+                    </td>
+                  </tr>";
+                }
+                  ?>
+                </tbody>
+              </table>
+            </div>
+
+        </div>
     </div>
 </div>
 <!-- /.content-wrapper -->
